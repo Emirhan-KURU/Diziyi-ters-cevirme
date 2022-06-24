@@ -1,0 +1,26 @@
+
+#include<stdio.h>
+#define N 4
+int main() 
+{
+	int i,j,k;
+	int toplam = 0;
+	int d1[N];
+	int d2[N];
+	
+	printf("Lutfen %d tane sayi giriniz:\n", N);
+   
+    for (i = 0; i < N; i++) 
+    {
+      scanf("%d", &d1[i]);
+    }
+  
+	for(i=0,j=N-1;i<N;i++,j--)
+	{
+		d2[i] = d1[j];
+	}
+	
+	for(i=0;i<4;i++)
+		printf("%d ",d2[i]);
+}
+
